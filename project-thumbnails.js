@@ -22,11 +22,5 @@ window.PORTFOLIO_THUMBNAILS = {
   "video-pon":        { title:"PON XXI Closing", imageUrl:"", driveVideoId:"17xwnc7UBTJ2XpaUXwXGGDhMS1MAYbrrC", source:"drive-video", approved:true, alt:"Frame PON closing ceremony" },
   "video-jakarta":    { title:"Old Town Jakarta", imageUrl:"", driveVideoId:"17rRlmuQERy3EqSJVMX9VHF4n7oz9RLW8", source:"drive-video", approved:true, alt:"Frame video kawasan Kota Tua Jakarta" },
   "video-cimory":     { title:"Cimory Riverside", imageUrl:"", driveVideoId:"1wHFgOR-KhuFCVTMYrbULB7sjxqOt-_RY", source:"drive-video", approved:true, alt:"Frame video Cimory Riverside" },
-  "video-hutan":      { title:"Hutan Menyala — Dewi Air", imageUrl:"", driveVideoId:"1wd8Q-RsxEkquXUynv9HdHajs50_-0iRX", source:"drive-video", approved:true, alt:"Frame Hutan Menyala" },
-  "behance-sal":       { title:"Sal Priadi", imageUrl:"", driveVideoId:"", source:"behance-pending", approved:false, alt:"Fotografi panggung Sal Priadi" },
-  "behance-juicy":     { title:"Juicy Luicy", imageUrl:"", driveVideoId:"", source:"behance-pending", approved:false, alt:"Fotografi panggung Juicy Luicy" },
-  "behance-burgerkill":{ title:"Burgerkill Behance", imageUrl:"", driveVideoId:"1bTWg7NrTDq_yqGqO1l0ImlJ06WLdsa7R", source:"drive-video", approved:true, alt:"Teaser 25th Kill-vesarry" },
-  "behance-restory":   { title:"Video Ads Restory", imageUrl:"", driveVideoId:"", source:"behance-pending", approved:false, alt:"Kampanye iklan Restory" },
-  "behance-jansen":    { title:"The Jansen", imageUrl:"", driveVideoId:"", source:"behance-pending", approved:false, alt:"Fotografi The Jansen di Tau Tau Fest" },
-  "behance-isyana":    { title:"Isyana Sarasvati", imageUrl:"", driveVideoId:"", source:"behance-pending", approved:false, alt:"Fotografi Isyana Sarasvati di Gaia Music Festival" }
+  "video-hutan":      { title:"Hutan Menyala — Dewi Air", imageUrl:"", driveVideoId:"1wd8Q-RsxEkquXUynv9HdHajs50_-0iRX", source:"drive-video", approved:true, alt:"Frame Hutan Menyala" }
 };

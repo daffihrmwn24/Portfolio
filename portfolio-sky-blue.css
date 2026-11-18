@@ -113,3 +113,16 @@ body::before{background:
 .contact-method:focus-visible{outline-color:#5da9d9}
 .contact .footer{border-color:#a9c6db90}
 @media (prefers-color-scheme:dark){.story-process-mini,.contact,.story-intro{color:#1d3449}}
+
+/* Catch legacy inline lime title dots and older component accent colors. */
+.section-title span[style*="#9daa46"],.section-title span[style*="#b8ca59"],.section-title span[style*="#b8ca59"],.contact h2 span[style*="#f5f4f0"]{color:#84c7ef!important}
+#work .show-more .outline-btn:hover,.hero-bottom .outline-btn:hover{background:#b9e4ff}
+.pill{border-color:#bcd6e8;background:#e8f5ff;color:#346281}
+.research-tag,.case-label{color:#528eb6}
+.research-card{background:#f0f7fd;border-color:#e0ecf5}
+.case-card .case-note{background:#eaf5ff;color:#4c728c}
+.resultcount,.section-note,.drive-footnote{color:#607c92}
+.media-showcase .media-play{color:#275a7a}
+.contact-link:hover,.footer-links a:hover{color:#2e75a5}
+.story-feature .story-type{color:#c4e9ff}
+.story-feature .story-feature-overlay{color:#fff}

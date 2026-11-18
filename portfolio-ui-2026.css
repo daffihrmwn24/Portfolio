@@ -1,0 +1,80 @@
+/* Daffi Portfolio 2026 — visual overhaul based on rounded editorial / bento references.
+   Intentional hierarchy: minimal navigation, generous white space, large type and real project imagery. */
+:root{--paper:#f7f8f5;--ink:#161b19;--line:#e3e7e1;--muted:#75817c;--accent:#d7f36a;--dark:#1b2522;--font:'Space Grotesk',sans-serif}
+html{background:#b9cec9}body{background:transparent;color:var(--ink);font-family:'DM Sans',sans-serif;font-size:14px}
+body::before{content:"";pointer-events:none;position:fixed;inset:0;background:radial-gradient(ellipse 65% 60% at 75% 32%,#d8dcca60,transparent 70%),linear-gradient(132deg,#adc7c6,#cbd8d0 65%,#e2e0d5);z-index:-1}
+body>.shell:first-of-type,header.shell{max-width:1500px;width:calc(100% - 72px);padding:0 44px;background:var(--paper);margin:42px auto 0;border-radius:24px 24px 0 0}
+main{max-width:1500px;width:calc(100% - 72px);margin:0 auto 55px;background:var(--paper);border-radius:0 0 24px 24px;overflow:hidden;box-shadow:0 30px 95px #44595520}
+main>.shell,.section.shell{max-width:none;padding-left:44px;padding-right:44px}
+.nav{height:80px;border-bottom:none;position:relative;z-index:9}
+.logo{font-size:24px;letter-spacing:-.085em}.logo span{color:#9db73d}
+.navlinks{gap:8px;border:1px solid #e1e5df;border-radius:30px;padding:6px 8px;background:#fff}
+.navlinks a{padding:8px 11px;border-radius:24px;font-size:10px;letter-spacing:.045em;font-weight:700;text-transform:none;color:#3b4842;transition:background .2s}
+.navlinks a:hover{background:#e9f3cb;color:#1a261c}
+.nav-right .availability{font-weight:600;font-size:10px;color:#536d61;letter-spacing:0}
+.dot{background:#8ead71;box-shadow:0 0 0 4px #ebf4e5}
+.hero{min-height:unset;padding:104px 0 0;display:block}
+.hero>.hero-main{min-height:420px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(280px,.55fr);gap:55px;align-items:end;padding:5px 0 49px}
+.eyebrow{font-size:11px;letter-spacing:.07em;text-transform:none;gap:9px}
+.eyebrow:before{content:'✳';width:auto;height:auto;background:none;color:#a7c552;font-size:16px}
+.hero-title{font:500 clamp(66px,7.9vw,125px)/.95 var(--font);letter-spacing:-.088em;margin:23px 0 0;max-width:830px}
+.hero-title .indented{padding-left:0;display:block}
+.hero-title em{background:var(--accent);font-size:.82em;transform:translateY(-.055em);vertical-align:baseline}
+.hero-bottom{display:block;margin:0 0 8px}.hero-bottom p{max-width:350px;font-size:16px;line-height:1.6;letter-spacing:-.03em}
+.hero-bottom .tiny-meta{display:none}
+.hero-bottom .outline-btn{margin-top:28px!important;border:0;border-radius:30px;background:var(--accent);padding:14px 19px;text-transform:none;letter-spacing:0;font-weight:700;font-size:12px}
+.hero-bottom .outline-btn:hover{background:#c1e150}
+.hero .stats-grid{display:none}
+.hero-bento{display:grid;grid-template-columns:1.45fr 1fr .95fr 1fr;gap:8px;padding:0 0 35px}
+.hero-tile{position:relative;min-height:295px;border-radius:13px;overflow:hidden;background:#b1c6ba;color:#fff;isolation:isolate}
+.hero-tile img{position:absolute;inset:0;height:100%;width:100%;object-fit:cover;transition:transform .5s ease}
+.hero-tile:hover img{transform:scale(1.04)}
+.hero-tile::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(to top,#0c191aa0,transparent 58%)}
+.hero-tile a{position:absolute;inset:0;z-index:3}
+.hero-tile .tile-label{position:absolute;z-index:2;bottom:20px;left:22px;max-width:80%;font:600 15px/1.1 var(--font);letter-spacing:-.035em;text-shadow:0 2px 7px #0006}
+.hero-tile .tile-top{position:absolute;z-index:2;top:17px;left:19px;font:700 10px var(--font);letter-spacing:.06em}
+.hero-tile .tile-arrow{position:absolute;z-index:2;bottom:16px;right:18px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#1d2a1e;font-size:17px}
+.hero-tile .tile-placeholder{position:absolute;inset:0;background:radial-gradient(circle at 72% 34%,#e4ebc9 0 15%,transparent 16%),linear-gradient(125deg,#6e877d,#c6d4c5)}
+.hero-tile:nth-child(2) .tile-placeholder{background:radial-gradient(ellipse at 50% 50%,#95aba7,transparent 65%),repeating-linear-gradient(90deg,#b0c2bd 0 3px,#d6e0d9 3px 5px)}
+.hero-tile:nth-child(3) .tile-placeholder{background:radial-gradient(ellipse at 33% 70%,#cae1c2 0 22%,transparent 23%),linear-gradient(145deg,#c6d3b9,#758a85)}
+.hero-tile:nth-child(4) .tile-placeholder{background:linear-gradient(35deg,#607b77,#a4c2b8)}
+.marquee{border:0;background:var(--dark)}.marquee-track{padding:14px 0;font-size:10px;letter-spacing:.12em}
+.section,.section.shell{padding-top:96px;padding-bottom:98px}
+.section-heading{margin-bottom:32px}.section-title{font-size:clamp(52px,6.6vw,91px);line-height:1;letter-spacing:-.078em}
+.section-kicker{font-size:11px;letter-spacing:.08em;color:#61716a}
+.section-note{max-width:325px;font-size:12px;color:#718079}
+#work{padding-top:104px}
+.projects{gap:28px 16px}
+.project .visual{height:330px;border-radius:14px;background:#bac7b6}
+.project .project-meta{border:0;margin-top:0;padding-top:17px}
+.project .project-meta h3{font-size:23px}
+.project .project-meta p{font-size:12px}
+.project .art-word{font-size:clamp(38px,4.5vw,74px)}
+.project .visual[data-thumbnail-status="loaded"] .art-word{opacity:.1;transition:opacity .3s}
+.project:hover .visual[data-thumbnail-status="loaded"] .art-word{opacity:.9}
+#projectgrid .visual .art-num{z-index:5}
+#projectgrid .visual .project-cover-image{object-fit:cover}
+.project-detail-btn{font-size:10px}
+.project-meta small{background:#edf0e9;padding:7px 11px;border-radius:20px;color:#4f5f55}
+.filterbar{border:0;margin:5px 0 26px;padding:0}
+.filter-btn,.media-filter,.behance-tag{background:#fff;border-color:#e2e5df;padding:10px 16px;letter-spacing:0;font-size:11px}
+.show-more .outline-btn,.behance-bottom .outline-btn{border-radius:30px}
+.media-showcase{border:0;background:#f0f2ed}
+.media-gallery{gap:24px 15px}.media-cover{border-radius:14px;aspect-ratio:1.34}
+.media-item h3{font-size:20px}
+.media-play{background:#eef1e8b7;color:#1e2a21;border-color:#fff}
+.media-privacy{border-radius:12px;background:#e5e9e1}
+.behance-section{background:#e8eee7}.behance-grid{gap:16px}
+.behance-art{border-radius:14px;height:270px}
+.behance-card-body{border:0;margin:0;padding:16px 0}
+.behance-big-word{font-size:clamp(31px,3.1vw,47px)}
+.behance-card h3{font-size:21px}
+.about{background:#e5ebe4;border:0}
+.education{background:#1d2824}
+.contact{background:#d6ecae;color:#17241a;border-radius:0 0 24px 24px}
+.contact .contact-link{font-size:clamp(20px,2.4vw,32px)}
+.footer{margin-top:80px}
+.case-card{border-radius:20px}.media-player-frame{border-radius:12px;overflow:hidden}
+@media(max-width:1100px){body>.shell:first-of-type,header.shell,main{width:calc(100% - 34px)}.hero>.hero-main{grid-template-columns:1.2fr .8fr;gap:24px}.hero-title{font-size:clamp(58px,8vw,105px)}.hero-tile{min-height:245px}.navlinks{gap:0}.navlinks a{font-size:10px;padding:7px}}
+@media(max-width:790px){header.shell{padding:0 24px}main>.shell,.section.shell{padding-left:24px;padding-right:24px}.navlinks{display:none;position:absolute;top:65px;left:0;right:0;border-radius:16px;z-index:10;box-shadow:0 12px 40px #0001}.navlinks.open{display:flex}.menu{display:block}.hero>.hero-main{display:block;padding:5px 0 43px}.hero{padding-top:65px}.hero-title{font-size:clamp(62px,11vw,100px);margin-bottom:26px}.hero-bottom p{max-width:510px}.hero-bento{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-tile{min-height:235px}.hero-tile:nth-child(1){grid-column:span 2;min-height:300px}.hero-tile:nth-child(4){min-height:235px}.section{padding-top:78px;padding-bottom:78px}}
+@media(max-width:560px){header.shell,main{width:calc(100% - 18px)}header.shell{margin-top:9px;border-radius:18px 18px 0 0;padding:0 16px}main{margin-bottom:9px;border-radius:0 0 18px 18px}main>.shell,.section.shell{padding-left:16px;padding-right:16px}.nav{height:68px}.hero{padding-top:55px}.hero-title{font-size:clamp(52px,12.4vw,78px)}.hero-bottom .outline-btn{display:inline-flex}.hero-bento{gap:7px;padding-bottom:18px}.hero-tile{min-height:175px;border-radius:10px}.hero-tile:nth-child(1){min-height:205px}.hero-tile .tile-label{bottom:15px;left:13px;font-size:12px}.hero-tile .tile-top{top:11px;left:12px;font-size:9px}.hero-tile .tile-arrow{width:24px;height:24px;bottom:10px;right:9px;font-size:13px}.section-title{font-size:54px}.projects{grid-template-columns:1fr}.project .visual{height:285px}.contact{border-radius:0 0 18px 18px}.navlinks{top:62px}.nav-right .availability{display:none}}

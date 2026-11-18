@@ -7,14 +7,14 @@ const hero=document.querySelector('.hero'),main=hero?.querySelector('.hero-main'
 if(!hero||!main)return;
 const left=main.querySelector('.hero-copy'),right=main.querySelector('.hero-aside'),bottom=main.querySelector('.hero-bottom'),title=hero.querySelector('.hero-title');
 if(!left||!right||!bottom||!title)return;
-hero.querySelector('.hero .eyebrow')?.replaceChildren(document.createTextNode('Film • Sinematografi • Kreatif Visual'));
-title.innerHTML='Membangun cerita visual yang terasa, tidak sekadar terlihat.';
+hero.querySelector('.hero .eyebrow')?.replaceChildren(document.createTextNode('DAFFI HARMAWAN · BANDUNG'));
+title.innerHTML='Saya bikin film,<br>video, dan foto.';
 left.append(bottom);
 const p=bottom.querySelector('p');
-if(p)p.textContent='Berkarya di bidang film, sinematografi, fotografi, dan produksi kreatif untuk menghadirkan cerita yang autentik, bermakna, dan berkesan.';
+if(p)p.textContent='Saya kerja di balik kamera—kadang di panggung musik, di lokasi film, atau di tengah acara yang cuma terjadi sekali. Di sini ada beberapa pekerjaan yang pernah saya tangani.';
 const actions=document.createElement('div');actions.className='hero-actions';
-const work=document.createElement('a');work.className='hero-action primary';work.href='#case-stories';work.textContent='Lihat karya saya ↗';
-const video=document.createElement('a');video.className='hero-action secondary';video.href='#youtube';video.textContent='▶  Tonton karya video';
+const work=document.createElement('a');work.className='hero-action primary';work.href='#case-stories';work.textContent='Lihat proyek ↗';
+const video=document.createElement('a');video.className='hero-action secondary';video.href='#youtube';video.textContent='▶  Tonton video';
 actions.append(work,video);
 bottom.append(actions);
 const visual=document.createElement('div');visual.className='hero-visual';
@@ -23,7 +23,7 @@ poster.src='https://drive.google.com/thumbnail?id=1bTWg7NrTDq_yqGqO1l0ImlJ06WLds
 poster.alt='Cuplikan produksi video Burgerkill dari arsip portofolio';poster.decoding='async';poster.loading='eager';
 poster.onerror=()=>poster.remove();
 const glass=document.createElement('a');glass.href='#story';glass.className='hero-glass';glass.setAttribute('aria-label','Baca cerita di balik karya');
-const copy=document.createElement('div');copy.innerHTML='<strong>Cerita sebelum gambar.</strong><span>Film / Sinematografi / Produksi kreatif</span>';
+const copy=document.createElement('div');copy.innerHTML='<strong>Di balik layar Burgerkill</strong><span>Creative Producer · 25th Kill-vesarry</span>';
 const go=document.createElement('span');go.className='hero-go';go.setAttribute('aria-hidden','true');go.textContent='↗';
 glass.append(copy,go);visual.append(poster,glass);
 right.replaceChildren(visual);
@@ -52,13 +52,13 @@ if(bento){
  });
 }
 const process=document.createElement('section');process.className='story-process-mini';process.id='proses-kreatif';process.setAttribute('aria-label','Pendekatan kreatif');
-const summary=document.createElement('div');summary.className='process-summary';summary.innerHTML='<div class="process-kicker">Cara saya berkarya</div><h2>Dari ide hingga cerita yang utuh.</h2><p>Setiap proyek berangkat dari konteks dan tujuan, lalu dibangun melalui kolaborasi, eksplorasi visual, hingga hasil akhirnya.</p>';
+const summary=document.createElement('div');summary.className='process-summary';summary.innerHTML='<div class="process-kicker">Cara saya kerja</div><h2>Biasanya dimulai dari ngobrol.</h2><p>Setelah tahu apa yang mau dibuat, baru saya pikirkan gambar, orang-orang yang terlibat, dan cara mengerjakannya.</p>';
 process.append(summary);
 for(const c of [
- {n:'◎',title:'Konteks',desc:'Memahami latar, kebutuhan, dan pesan yang ingin disampaikan.'},
- {n:'♙',title:'Peran',desc:'Menentukan tanggung jawab dan kontribusi dalam tim.'},
- {n:'▤',title:'Proses',desc:'Mengolah ide menjadi naskah, pengambilan gambar, dan produksi.'},
- {n:'↗',title:'Hasil',desc:'Menampilkan karya akhir dan apa yang dapat dibuktikan.'}
+ {n:'◎',title:'Konteks',desc:'Ngobrol soal kebutuhan proyek dan apa yang perlu ditunjukkan.'},
+ {n:'♙',title:'Peran',desc:'Jelas siapa mengerjakan apa, termasuk bagian saya.'},
+ {n:'▤',title:'Proses',desc:'Persiapan, pengambilan gambar, dan semua keputusan kecil di lokasi.'},
+ {n:'↗',title:'Hasil',desc:'Foto atau video yang akhirnya bisa ditonton.'}
 ]){const card=document.createElement('article');card.className='process-card';const icon=document.createElement('span');icon.className='symbol';icon.setAttribute('aria-hidden','true');icon.textContent=c.n;const h=document.createElement('h3');h.textContent=c.title;const p=document.createElement('p');p.textContent=c.desc;card.append(icon,h,p);process.append(card)}
 hero.after(process);
 const nav=document.querySelector('.navlinks');
@@ -70,6 +70,6 @@ if(nav){
  const menu=document.querySelector('#menu');
  if(menu){nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}))}
 }
-const contact=document.querySelector('#contact .eyebrow');if(contact)contact.textContent='Ada ide untuk diceritakan?';
-const footnote=document.querySelector('#contact .contact-intro');if(footnote)footnote.textContent='Terbuka untuk kolaborasi film, kampanye visual, dokumentasi, dan produksi kreatif. Mari mulai dengan sebuah percakapan.';
+const contact=document.querySelector('#contact .eyebrow');if(contact)contact.textContent='Punya proyek?';
+const footnote=document.querySelector('#contact .contact-intro');if(footnote)footnote.textContent='Kalau lagi cari DoP, videografer, fotografer panggung, atau rekan produksi, kabarin saya. Ceritain proyeknya lewat email atau WhatsApp.';
 })();

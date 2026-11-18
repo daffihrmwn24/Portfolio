@@ -1,15 +1,17 @@
-/* User-provided YouTube project credits: Assistant Director (2), DOP (1), Scriptwriter & Assistant Director (1).
- * Titles are provisional where YouTube video metadata could not be verified.
- * Playback eligibility is controlled by YouTube; no source video files are copied.
+/* Enam karya YouTube — judul dan kredit berdasarkan data pemilik portofolio
+ * serta katalog Proyek YouTube. Video ditayangkan melalui embed YouTube,
+ * tanpa mengunggah ulang karya. Pemutaran bergantung pada kebijakan uploader.
  */
 (()=>{
 const videos=[
- {id:'JQwWu069QJI',title:'Film Project 01 — Assistant Director',role:'Assistant Director',desc:'Kredit peran diberikan langsung oleh pembuat portofolio. Judul produksi belum dikonfirmasi dari metadata video.',label:'Film production · Role confirmed by portfolio owner'},
- {id:'_h2F-LoBR2w',title:'Film Project 02 — Assistant Director',role:'Assistant Director',desc:'Kredit peran diberikan langsung oleh pembuat portofolio. Judul produksi belum dikonfirmasi dari metadata video.',label:'Film production · Role confirmed by portfolio owner'},
- {id:'ZpSzEz1hKPs',title:'Ruang Musik — Cinematography',role:'Director of Photography',desc:'Tautan tercantum pada bagian Ruang Musik di PDF portofolio; peran Director of Photography juga dikonfirmasi langsung oleh pembuat portofolio.',label:'Ruang Musik · Role confirmed by portfolio owner'},
- {id:'_p241vZQREo',title:'Film / Television — Scriptwriting & Direction',role:'Scriptwriter & Assistant Director',desc:'Peran dikonfirmasi langsung oleh pembuat portofolio. PDF sebelumnya mengulang tautan pada entri Program TV Playlist dan Askara Sinema, sehingga judul proyek masih perlu dipastikan.',label:'Scriptwriting & Direction · Role confirmed by portfolio owner',warning:'Judul produksi belum dikonfirmasi: tautan yang sama muncul pada dua entri berbeda dalam PDF portofolio.'}
+ {id:'JQwWu069QJI',title:'Tentang Kita Series — Video 01',role:'Asisten Sutradara',desc:'Karya serial audiovisual. Saya terlibat sebagai asisten sutradara dalam proses produksi.',label:'Serial / Asisten Sutradara'},
+ {id:'_h2F-LoBR2w',title:'Tentang Kita Series — Video 02',role:'Asisten Sutradara',desc:'Karya lain dari Tentang Kita Series dengan kontribusi saya sebagai asisten sutradara.',label:'Serial / Asisten Sutradara'},
+ {id:'ZpSzEz1hKPs',title:'Ruang Musik — Yowha',role:'Director of Photography',desc:'Dalam produksi musik ini saya bertanggung jawab pada aspek sinematografi dan bahasa visual.',label:'Pertunjukan musik / Sinematografi'},
+ {id:'_p241vZQREo',title:'Campaign Hotel Santika Bandung',role:'Penulis Naskah & Asisten Sutradara',desc:'Saya terlibat dalam penulisan naskah sekaligus membantu proses penyutradaraan kampanye.',label:'Kampanye hotel / Penulisan & Penyutradaraan'},
+ {id:'3FBrlQIqP4c',title:'Film Pendek Sumpah Dokter FKG Unjani 2021',role:'Riset Naskah, Penulis Naskah & Asisten Sutradara',desc:'Saya berkontribusi dalam riset untuk pengembangan naskah, penulisan cerita, dan pendampingan sutradara pada proses produksi film pendek acara Sumpah Dokter FKG Unjani tahun 2021.',label:'Film pendek / FKG Unjani / 2021'},
+ {id:'w-2TW4XFvKU',title:'Campaign Hotel Maison Teraskita',role:'Penulis Naskah',desc:'Dalam produksi video kampanye Hotel Maison Teraskita, saya berkontribusi sebagai penulis naskah untuk membangun alur cerita dan pesan yang disampaikan.',label:'Kampanye hotel / Penulisan naskah'}
 ];
-const section=document.createElement('section');section.className='youtube-section';section.id='youtube';section.innerHTML='<div class="shell"><div class="youtube-head"><div><div class="section-kicker">YouTube / Selected film work</div><h2 class="section-title">On screen<span style="color:#9daa46">.</span></h2></div><p>Four selected YouTube projects with individually credited roles. Press play to watch here or open the original video on YouTube.</p></div><div class="youtube-grid"></div><p class="youtube-note">Roles have been confirmed by the portfolio owner; certain production titles remain provisional until source video metadata can be checked. YouTube controls playback and embedding availability.</p></div>';
+const section=document.createElement('section');section.className='youtube-section';section.id='youtube';section.innerHTML='<div class="shell"><div class="youtube-head"><div><div class="section-kicker">YouTube / Selected film work</div><h2 class="section-title">On screen<span style="color:#9daa46">.</span></h2></div><p>Enam karya pilihan dengan peran berbeda, mulai dari riset dan penulisan naskah, asistensi sutradara, hingga sinematografi. Pilih video untuk menontonnya langsung.</p></div><div class="youtube-grid"></div><p class="youtube-note">Judul dan kredit peran mengikuti informasi pemilik portofolio dan katalog proyek. Ketersediaan pemutaran video ditentukan oleh pengaturan YouTube.</p></div>';
 const existing=document.querySelector('#drive-projects'),watch=document.querySelector('#watch');if(existing)existing.after(section);else if(watch)watch.after(section);else document.querySelector('#about')?.before(section);
 const grid=section.querySelector('.youtube-grid');
 videos.forEach(v=>{

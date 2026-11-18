@@ -1,0 +1,52 @@
+/* Story-led portfolio, authored from the user's existing project archive and confirmed role credits. */
+.story-intro{background:#1c2924;color:#f4f6f0;position:relative;overflow:hidden;padding:100px 0 96px}
+.story-intro:before{content:"";position:absolute;right:-110px;top:-180px;width:520px;height:520px;border:1px solid #718b793d;border-radius:50%;box-shadow:0 0 0 90px #80978208,0 0 0 180px #80978206;pointer-events:none}
+.story-intro .story-inner{position:relative;display:grid;grid-template-columns:.6fr 1.4fr;gap:7vw;align-items:start}
+.story-eyebrow{font:700 11px var(--font);letter-spacing:.13em;text-transform:uppercase;color:#bcd67a;display:flex;gap:10px;align-items:center}
+.story-eyebrow:before{content:"";width:24px;height:1px;background:currentColor}
+.story-intro h2{font:500 clamp(39px,5.15vw,78px)/1.09 var(--font);letter-spacing:-.066em;margin:0 0 24px}
+.story-intro h2 span{color:#cbeb82}
+.story-intro .story-paragraph{font-size:15px;line-height:1.86;color:#c6d2c8;max-width:650px;margin:0 0 26px}
+.story-link{display:inline-flex;align-items:center;gap:18px;border-bottom:1px solid #bdd67f;padding-bottom:8px;color:#d8efaa;font:700 11px var(--font);letter-spacing:.06em;text-transform:uppercase}
+.story-chapters{background:#f8f9f5;padding:105px 0 108px}
+.story-chapters .story-heading{display:grid;grid-template-columns:1fr 1fr;align-items:end;gap:30px;margin-bottom:44px}
+.story-chapters .section-title{margin-top:14px}
+.story-chapters .story-heading p{font-size:15px;color:#627167;max-width:390px;line-height:1.7;justify-self:end}
+.story-timeline{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.story-timeline:before{content:"";height:1px;position:absolute;top:17px;left:6px;right:12px;background:#ccd4c8}
+.story-step{position:relative;padding:48px 24px 0 0;min-width:0}
+.story-step:before{content:"";position:absolute;left:0;top:9px;width:17px;height:17px;border:5px solid #f8f9f5;background:#a1ba69;box-shadow:0 0 0 1px #9db26f;border-radius:50%;z-index:1}
+.story-step .story-year{font:700 11px var(--font);color:#617366;letter-spacing:.04em}
+.story-step h3{font:600 clamp(21px,2.45vw,34px)/1.12 var(--font);letter-spacing:-.054em;margin:12px 0}
+.story-step p{font-size:13px;line-height:1.76;color:#627167;margin:0;max-width:270px}
+.story-feature{background:#e8eee7;padding:106px 0 115px}
+.story-feature .story-feature-top{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:36px}
+.story-feature-top p{max-width:370px;color:#637268;font-size:13px;line-height:1.8}
+.story-feature-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+.story-feature-visual{position:relative;min-height:540px;border-radius:18px;background:linear-gradient(155deg,#3b5148,#9bb49c);overflow:hidden;isolation:isolate}
+.story-feature-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,#0c181ad6 4%,transparent 70%);z-index:1}
+.story-feature-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.story-feature-overlay{position:absolute;bottom:34px;left:35px;right:32px;z-index:3;color:#fff}
+.story-feature-overlay .story-type{font:700 11px var(--font);letter-spacing:.12em;text-transform:uppercase;color:#ddf6a6}
+.story-feature-overlay h3{font:500 clamp(34px,4vw,62px)/.99 var(--font);letter-spacing:-.065em;margin:13px 0 0}
+.story-feature-detail{background:#fff;border-radius:18px;padding:clamp(25px,3.7vw,51px);display:flex;flex-direction:column;justify-content:space-between}
+.story-feature-detail .story-counter{font:700 11px var(--font);text-transform:uppercase;letter-spacing:.12em;color:#819080}
+.story-feature-detail h3{font:500 clamp(29px,3.5vw,49px)/1.04 var(--font);letter-spacing:-.055em;margin:35px 0 21px}
+.story-feature-detail .story-fields{margin:0;display:grid;gap:19px}
+.story-feature-detail .story-fields div{border-top:1px solid #e1e7df;padding-top:13px}
+.story-feature-detail dt{font:700 11px var(--font);color:#738174;text-transform:uppercase;letter-spacing:.09em}
+.story-feature-detail dd{margin:8px 0 0;font-size:14px;line-height:1.67;color:#354139}
+.story-feature-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:30px}
+.story-feature-actions a{background:#d4ed90;color:#20301f;padding:12px 17px;border-radius:26px;font:700 11px var(--font);text-decoration:none}
+.story-feature-actions button{border:1px solid #ccd8c7;background:none;border-radius:26px;padding:12px 17px;cursor:pointer;font:700 11px var(--font)}
+.story-feature-actions button:focus-visible,.story-feature-actions a:focus-visible{outline:3px solid #81a33c}
+.story-switches{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.story-switches button{font:700 11px var(--font);border:1px solid #c4d0c3;border-radius:40px;background:transparent;padding:10px 15px;color:#425446;cursor:pointer}
+.story-switches button[aria-pressed=true]{background:#1c2924;color:#fff;border-color:#1c2924}
+.story-evidence{font-size:11px;color:#68796c;line-height:1.6;margin-top:23px}
+.story-case-addition{border-top:1px solid #d8ded5;margin-top:20px;padding-top:18px}
+.story-case-addition h4{font:700 12px var(--font);text-transform:uppercase;letter-spacing:.1em;margin:0 0 12px}
+.story-case-addition p{font-size:13px;line-height:1.75;margin:0;color:#505e54}
+@media(max-width:1000px){.story-feature-grid{grid-template-columns:1fr 1fr}.story-feature-visual{min-height:500px}.story-timeline{grid-template-columns:repeat(2,1fr);gap:35px 20px}.story-timeline:before{display:none}.story-step{padding:36px 15px 0 0}.story-step:before{top:0}}
+@media(max-width:720px){.story-intro,.story-chapters,.story-feature{padding:70px 0}.story-intro .story-inner,.story-chapters .story-heading,.story-feature-grid{grid-template-columns:1fr}.story-intro .story-inner{gap:26px}.story-chapters .story-heading p{justify-self:start}.story-timeline{grid-template-columns:1fr 1fr}.story-feature-top{display:block}.story-feature-visual{min-height:350px}.story-feature-detail{min-height:unset}.story-feature-overlay{bottom:22px;left:22px}.story-feature-overlay h3{font-size:35px}}
+@media(max-width:440px){.story-timeline{grid-template-columns:1fr}.story-step{padding-top:32px}.story-feature-overlay h3{font-size:32px}}

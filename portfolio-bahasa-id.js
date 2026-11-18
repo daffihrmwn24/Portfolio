@@ -19,7 +19,7 @@ const mediaTexts={
 '#media-original':'Buka video asli di Google Drive ↗',
 '.youtube-section .section-kicker':'Video YouTube / Karya film pilihan',
 '.youtube-section .section-title':'Karya di layar.',
-'.youtube-section .youtube-head>p':'Empat proyek video dengan kredit peran yang sudah diberikan. Tonton langsung di halaman ini atau buka sumber aslinya di YouTube.',
+'.youtube-section .youtube-head>p':'Enam karya video pilihan dengan kredit peran yang sudah kamu berikan, termasuk film pendek Sumpah Dokter FKG Unjani dan kampanye Hotel Maison Teraskita. Tonton di sini atau buka di YouTube.',
 '.youtube-note':'Kredit peran dikonfirmasi oleh pemilik portofolio; beberapa judul masih bersifat sementara sampai identitas produksi diverifikasi. Ketersediaan pemutaran dan penyematan diatur oleh YouTube.',
 '.drive-index .section-kicker':'Arsip proyek / Pembaruan dari Google Drive',
 '.drive-index .section-title':'Proyek lainnya.',

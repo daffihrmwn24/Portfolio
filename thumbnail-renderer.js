@@ -1,5 +1,5 @@
 /* Thumbnail renderer for the Portfolio website.
- * Loads after portfolio-v2.js, portfolio-media.js and portfolio-behance.js.
+ * Loads after portfolio-v2.js, portfolio-media.js and portfolio-storytelling.js.
  */
 (() => {
   const cfg = window.PORTFOLIO_THUMBNAILS || {};
@@ -26,8 +26,6 @@
   document.querySelectorAll("#projectgrid .project").forEach(card => {
     mount(card.querySelector(".visual"),cfg[card.dataset.case]);
   });
-  const behanceKeys=["behance-sal","behance-juicy","behance-burgerkill","behance-restory","behance-jansen","behance-isyana"];
-  document.querySelectorAll("#behance .behance-card").forEach((card,i)=>mount(card.querySelector(".behance-art"),cfg[behanceKeys[i]]));
   const videoKeys=["video-burgerkill-01","video-burgerkill-02","video-burgerkill-03","video-burgerkill-vinyl","video-pon","video-jakarta","video-cimory","video-hutan"];
   document.querySelectorAll("#watch .media-item").forEach((card,i)=>{
     const item=cfg[videoKeys[i]],img=card.querySelector(".media-thumb");

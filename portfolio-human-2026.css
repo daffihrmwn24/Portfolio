@@ -1,0 +1,35 @@
+/* Editorial cleanup: keep actual photography and film stills, remove stock-template labels. */
+.logo{letter-spacing:-.055em}
+.hero .eyebrow,.section-kicker,.story-eyebrow,.process-kicker,.pg-kicker{letter-spacing:.035em!important;text-transform:none!important;font-weight:600!important}
+.hero-title{letter-spacing:-.075em}
+.hero-glass{background:linear-gradient(0deg,rgba(13,30,43,.75),rgba(13,30,43,.24))!important;border-color:rgba(255,255,255,.18)!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.hero-glass strong{font-size:16px}
+.hero-glass span{letter-spacing:0!important}
+.hero-tile .tile-top{letter-spacing:0!important;text-transform:none!important;font-weight:500!important}
+.hero-tile .tile-arrow{font-weight:400}
+.hero-tile:after{background:linear-gradient(0deg,rgba(8,21,38,.72),transparent 65%)!important}
+.visual:has(img) .art-word,.visual:has(img) .art-num,.drive-cover:has(img) .drive-cover-word{display:none!important}
+.drive-cover:has(img) .drive-cover-type{background:rgba(20,35,50,.52)!important;color:#fff!important;border:none!important;backdrop-filter:none!important}
+.drive-cover-word{font-weight:500!important;opacity:.62;letter-spacing:-.06em}
+.art-word{font-weight:500!important;transform:none!important;opacity:.75}
+.art-num{font-weight:500!important}
+.project:hover .art-word{transform:none!important}
+.story-feature-visual .story-feature-overlay{background:linear-gradient(0deg,rgba(5,20,32,.45),transparent)!important}
+.story-type{letter-spacing:0!important;text-transform:none!important}
+.story-counter,.story-year,.case-label,.media-index,.pg-card-category{letter-spacing:0!important;text-transform:none!important}
+.story-feature-detail .story-fields dt{letter-spacing:0!important;text-transform:none!important;font-weight:600!important}
+.story-feature-detail .story-fields dd{font-size:13px;line-height:1.75}
+.story-evidence,.drive-footnote,.youtube-note,.media-privacy{font-size:11px!important;opacity:.7;line-height:1.7}
+#work .section-note,#experience .section-note,.story-feature-top>p,.pg-section-head>p{line-height:1.7}
+.pg-card-role{font-weight:500!important}
+.pg-card-category{font-size:10px!important}
+.pg-card-count{background:rgba(15,35,53,.66)!important;backdrop-filter:none!important;border:none!important}
+.media-cover-label,.media-index,.media-access{display:none!important}
+.drive-cover .drive-cover-word{pointer-events:none}
+.story-process-mini .process-card .symbol{display:none!important}
+.story-process-mini .process-card{min-height:135px;gap:10px}
+.story-process-mini .process-card h3{margin:0}
+.contact h2{letter-spacing:-.07em}
+.contact .eyebrow{letter-spacing:0;text-transform:none}
+.footer{font-size:12px}
+@media(max-width:690px){.hero-title{line-height:1.04!important}.story-process-mini .process-card{min-height:120px}.hero-glass strong{font-size:13px}}

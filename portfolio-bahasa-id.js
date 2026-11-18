@@ -53,7 +53,7 @@ const descriptions=[
 'Rekaman kegiatan VinTalks di GIIAS yang membahas perkembangan kendaraan listrik dan V-GREEN.',
 'Arsip dokumentasi visual upacara penutupan PON XXI 2024.',
 'Dokumentasi kegiatan komunitas Ngabandungan Bandung. Detail kredit produksi masih perlu diverifikasi.',
-'Video dokumentasi kolaborasi berbagai penampil dan talenta dalam proyek Unseen Media.',
+'Dokumentasi acara BCA Porseni 2026, mencakup berbagai penampil dan peserta. Kredit videografer mengikuti label folder Drive.',
 'Video suasana peluncuran produk dan pengalaman pengunjung dalam kegiatan iBox.',
 'Dokumentasi peluncuran kampanye MotoGP 2026 oleh tim Yamaha di Jakarta.',
 'Dokumentasi pelaksanaan acara BCA Expoversarry 2026.',

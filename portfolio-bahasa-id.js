@@ -24,7 +24,7 @@ const mediaTexts={
 '.drive-index .section-kicker':'Arsip proyek / Pembaruan dari Google Drive',
 '.drive-index .section-title':'Proyek lainnya.',
 '.drive-heading>p':'Jejak produksi dari berbagai proyek kreatif, disusun berdasarkan konteks kerja dan dokumentasi yang tersedia.',
-'.drive-footnote':'Nama proyek dan peran pada bagian ini mengikuti label folder Google Drive. Kredit dalam video belum seluruhnya diverifikasi secara independen. Materi yang belum disetujui untuk tayang tidak disematkan.',
+'.drive-footnote':'Video proyek pada bagian ini memiliki akses lihat melalui tautan Google Drive. Penayangan video bukan verifikasi seluruh kredit produksi; peran pada kartu masih mengacu pada label folder Drive.',
 '#experience .section-kicker':'Pengalaman / Perjalanan profesional',
 '#experience .section-title':'Perjalanan karier.',
 '#experience .section-note':'Jejak peran profesional yang tercatat dalam CV dan portofolio. Sebagian periode dan rincian jabatan masih perlu dicocokkan.',
@@ -44,9 +44,9 @@ all('.drive-controls button',b=>{const map={All:'Semua',Brand:'Merek',Events:'Ac
 all('.drive-cover-type',el=>{el.textContent=el.textContent.replace('Brand','Merek').replace('Events','Acara')});
 all('.drive-card-body .role',p=>{p.textContent=p.textContent.replace(' · based on Drive folder label',' · berdasarkan nama folder Drive')});
 all('.drive-card-body>a',a=>a.textContent='Tonton dokumentasi ↗');
-all('.drive-count',p=>p.textContent='Media belum disetujui untuk ditayangkan');
+all('.drive-count',p=>p.textContent='Video belum tersedia');
 const descriptions=[
-'Materi konten video untuk Valta Ltd. berdasarkan arsip proyek. Lingkup pekerjaan dan hak penayangan video TikTok masih memerlukan pemeriksaan.',
+'Materi konten video untuk Valta Ltd. berdasarkan arsip proyek. Cuplikan video tersedia dan dapat ditonton langsung dari kartu proyek.',
 'Video hasil sesi foto PARTE Kuala Lumpur 2026. Hubungan proyek dan peran tercatat dalam folder Drive.',
 'Video profil Program Film dan Televisi UPI. Tahun 2021 mengacu pada judul berkas video final.',
 'Dokumentasi Jakarta Light Festival di kawasan Kota Tua. Terdapat dua video pada folder proyek.',
@@ -59,8 +59,8 @@ const descriptions=[
 'Dokumentasi pelaksanaan acara BCA Expoversarry 2026.',
 'Materi studi kasus dan iklan Cimory Riverside. Folder yang sama juga memuat video terpisah mengenai Hutan Menyala.',
 'Kampanye 25th Kill-vesarry mencakup sejumlah video teaser serta dokumentasi pembukaan kemasan vinyl.',
-'Rekaman penampilan The High Temple dalam Tala Session. Kredit pada tingkat video serta persetujuan tayang masih perlu ditinjau.',
-'Delapan video sesi musik yang diarsipkan, termasuk berkas yang menyebut Adrijati Indi, Arash Buana, dan Raissa Anggiani. Materi belum disematkan sambil menunggu peninjauan kredit dan penggunaan.'
+'Rekaman penampilan The High Temple dalam Tala Session. Video tersedia; detail kredit produksi tetap mengikuti pemeriksaan dokumen.',
+'Delapan video sesi musik yang diarsipkan, termasuk berkas yang menyebut Adrijati Indi, Arash Buana, dan Raissa Anggiani. Satu video pilihan tersedia untuk ditonton pada kartu proyek.'
 ];
 all('.drive-card-body .detail',(el,i)=>{if(descriptions[i])el.textContent=descriptions[i]});
 const thumbnails=['Produksi kreatif','Dokumentasi acara','Fotografi merek','Dokumenter','Media imersif','Fotografi musik'];

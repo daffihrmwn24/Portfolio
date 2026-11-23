@@ -60,3 +60,11 @@
 #photo-video-projects{background:linear-gradient(135deg,#f5faff,#e8f5ff)}
 #photo-video-projects .pg-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:690px){#photo-video-projects .pg-card-grid{grid-template-columns:1fr}.pg-filters button{padding:8px 12px}}
+
+/* Batik Fractal: one project, nine selectable videos */
+#batik-fractal{background:linear-gradient(135deg,#f5faff,#edf4fb)}
+#batik-fractal .pg-card-grid{grid-template-columns:minmax(0,620px)}
+#batik-fractal .pg-card-cover{height:clamp(240px,34vw,345px)}
+.pg-project-link{display:inline-flex;align-items:center;margin-top:12px;padding:10px 14px;border:1px solid #bfddf1;border-radius:999px;background:#e7f4ff;color:#2a5675;font:600 12px var(--font);text-decoration:none}
+.pg-project-link:hover{background:#d2ebff}
+@media(max-width:690px){#batik-fractal .pg-card-grid{grid-template-columns:1fr}}

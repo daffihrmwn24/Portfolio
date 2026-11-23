@@ -49,3 +49,14 @@
 .pg-card-cover:focus-visible,.pg-card-body button:focus-visible,.pg-thumb:focus-visible,.pg-close:focus-visible,.pg-prev:focus-visible,.pg-next:focus-visible{outline:3px solid #7dcaff;outline-offset:3px}
 @media(max-width:950px){#other-galleries .pg-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.portfolio-gallery-section.shell{padding:65px 24px}}
 @media(max-width:690px){.portfolio-gallery-section.shell{padding:55px 15px}.pg-section-head{display:block}.pg-section-head>p{margin-top:15px}.pg-card-grid,#live-sessions .pg-card-grid,#other-galleries .pg-card-grid{grid-template-columns:1fr}.pg-card-cover{height:240px}.portfolio-gallery-modal{padding:8px}.pg-dialog{border-radius:13px;padding:13px;max-height:98vh}.pg-stage{height:min(50vh,370px)}.pg-prev,.pg-next{height:35px;width:35px}.pg-thumb{flex-basis:93px;height:68px}.pg-meta{align-items:flex-start}.pg-source{font-size:10px}.pg-head h2{font-size:24px}}
+
+/* Category tabs for project archives; BTS never shown as populated when empty. */
+.pg-filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:5px 0 15px}
+.pg-filters button{border:1px solid #cbdfee;background:#f0f7fc;color:#3c6783;border-radius:999px;padding:9px 15px;font:600 11px var(--font);cursor:pointer}
+.pg-filters button[aria-pressed="true"]{color:#173a55;background:#b9e4ff;border-color:#85c8ec}
+.pg-filters button:disabled{opacity:.48;cursor:not-allowed;background:#edf1f5}
+.pg-bts-note{font-size:11px;color:#7893a4}
+.pg-thumb[hidden]{display:none!important}
+#photo-video-projects{background:linear-gradient(135deg,#f5faff,#e8f5ff)}
+#photo-video-projects .pg-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:690px){#photo-video-projects .pg-card-grid{grid-template-columns:1fr}.pg-filters button{padding:8px 12px}}

@@ -5,13 +5,14 @@
  */
 (()=>{
 const projects=[
+{title:"Pertamina Hulu Sanga Sanga — Phantom",role:"Director of Photography (label folder)",year:"2026",type:"Brand",cover:"PHANTOM",mediaId:"16Y5sa674FFdybom9roWTnCAZo2a4vnJ1",desc:"Video final PHANTOM FULL HD. Folder BTS tersedia, tetapi masih kosong dan belum ditampilkan."},
 {title:"Valta Ltd. — Video Content",role:"Videographer Lead",year:"2026",type:"Brand",cover:"VALTA / CONTENT",mediaId:"14KMLhXNrDtFpoF9mbmyy6KeRjK9LFZiQ",desc:"Video content archive associated with Valta Ltd. See the video work from the named Valta Ltd. folder."},
 {title:"PARTE Kuala Lumpur — Photosession",role:"Videographer",year:"2026",type:"Brand",cover:"PARTE / KUALA LUMPUR",mediaId:"1W-7OllpyA6QRUrqOJqaSPWVl6HFpxWYW",desc:"Photosession video deliverable. Project association and role are drawn from the named Drive folder."},
 {title:"Film & Television UPI — Video Profile",role:"Director",year:"2021",type:"Film",cover:"FILM & / TELEVISION",mediaId:"1NOOscnYMXcAFnolOb-dvbD7saxmYhRUN",desc:"Profile video for Film and Television UPI; year follows the final video filename."},
 {title:"Jakarta Light Festival",role:"Lead Videographer",year:"2024",type:"Events",cover:"JAKARTA / LIGHT FEST",mediaId:"17rRlmuQERy3EqSJVMX9VHF4n7oz9RLW8",desc:"Old Town visual-event documentation. Contains two videos in the project folder."},
 {title:"VinFast at GIIAS",role:"Videographer",year:"2026",type:"Events",cover:"VINFAST / GIIAS",mediaId:"1hqjamGIkA_xuP2x2vWKQC_Pk_TpgUplR",desc:"VinTalks event recap covering electric mobility at GIIAS."},
 {title:"PON XXI — Closing Ceremony",role:"Videographer",year:"2024",type:"Events",cover:"PON / XXI",mediaId:"17xwnc7UBTJ2XpaUXwXGGDhMS1MAYbrrC",desc:"Project archive for visual documentation of the PON XXI closing ceremony."},
-{title:"Ngabandungan Bandung",role:"Creative Lead — Documentation",year:"2026",type:"Events",cover:"NGABAN / DUNGAN",mediaId:"1ZEcN6syT17KsytogZBRuOPKurlpZV9e4",desc:"Community and city-event documentation. Detailed individual credits are pending confirmation."},
+{title:"Ngabandungan Bandung",role:"Creative Lead — Documentation",year:"2026",type:"Events",cover:"NGABAN / DUNGAN",mediaId:"1ZEcN6syT17KsytogZBRuOPKurlpZV9e4",desc:"Dokumentasi Ngabandungan Bandung dengan satu video dan 15 foto dari folder Photo dan Video."},
 {title:"BCA Porseni 2026",role:"Videographer (label folder)",year:"2026",type:"Events",cover:"BCA / PORSENI",mediaId:"1t_XnIyJWgZkWRWPUE8UKnq_Kda09PezF",desc:"Dokumentasi acara dengan berbagai penampil dan peserta. Nama proyek mengikuti folder Drive terbaru."},
 {title:"iBox — Product Launch",role:"Videographer",year:"—",type:"Brand",cover:"IBOX / LAUNCH",mediaId:"1EI1OLZGQ_bmYEUNW2ItPUCLly8sBwKVU",desc:"Product launch and customer-experience video; source folder title names the iPhone launch."},
 {title:"Yamaha MotoGP — Livery Launch",role:"Videographer",year:"2026",type:"Brand",cover:"YAMAHA / MOTOGP",mediaId:"1PV-EUPhIpiD9eThA68MSDV-hHV9aCuSE",desc:"Visual footage from Yamaha MotoGP 2026 campaign launch in Jakarta."},

@@ -61,7 +61,7 @@ const nav=document.querySelector('.navlinks');if(nav){for(const [href,name] of [
 }
 // When existing archive cards have multiple media, use the same selector rather than opening one arbitrarily.
 const archiveMap=[
- ['Ngabandungan Bandung','drive-ngabandungan'],['Sembilan Matahari × Burgerkill','drive-burgerkill'],['Jakarta Light Festival','drive-jakarta'],['Cimory Riverside','drive-cimory'],['Sudut Ke Sudut × Ruang Musik','drive-ruang'],['Tala Session','live-temples']
+ ['Pertamina Hulu Sanga Sanga — Phantom','drive-phantom'],['Ngabandungan Bandung','drive-ngabandungan'],['Sembilan Matahari × Burgerkill','drive-burgerkill'],['Jakarta Light Festival','drive-jakarta'],['Cimory Riverside','drive-cimory'],['Sudut Ke Sudut × Ruang Musik','drive-ruang'],['Tala Session','live-temples']
 ];
 document.querySelectorAll('#drive-projects .drive-card').forEach(card=>{
  const title=card.querySelector('h3')?.textContent||'';
